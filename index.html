@@ -89,8 +89,8 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>
-              <span>Contact</span>
+            <a href="#booking" class="navbar-link" data-nav-link>
+              <span>Book Taxi</span>
 
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
@@ -103,7 +103,7 @@
       <div class="header-contact">
 
         <div>
-          <p class="contact-label">Call Us in Sweden</p>
+          <a href="tel:+46764575040" class="contact-label">Call Us</a>
 
           <a href="tel:+46764575040" class="contact-number">+46 76 457 50 40</a>
         </div>
@@ -135,26 +135,95 @@
       -->
 
       <section class="section hero" aria-label="home" id="home"
-        style="background-image: url('./assets/images/hero-banner.jpg')">
+        data-hero-slider
+        data-hero-slides="./assets/images/hero-slide-1.jpg,./assets/images/hero-slide-2.jpg,./assets/images/hero-slide-3.jpg">
         <div class="container">
 
-          <div class="hero-content">
+          <div class="hero-layout">
 
-            <h2 class="h1 hero-title">
-              <span class="span">Your Complete</span> Solution Partner
-            </h2>
+            <div class="hero-content">
+              <p class="hero-kicker">Stockholm taxi booking</p>
 
-            <p class="hero-text">
-              Skytrek AB offers comprehensive services in Sweden: Taxi rides, IT solutions, and exam preparation mobile apps
-            </p>
+              <h2 class="h1 hero-title">
+                <span class="span">Stockholm</span> Taxi in Minutes
+              </h2>
 
-            <a href="#service" class="btn-outline">View Services</a>
+              <p class="hero-text">
+                Book a clean ride in Stockholm. Send your request and we reply on WhatsApp.
+              </p>
 
-            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
-              class="hero-shape shape-1">
+              <ul class="hero-pills">
+                <li class="hero-pill">24/7</li>
+                <li class="hero-pill">Airport</li>
+                <li class="hero-pill">Fixed price</li>
+              </ul>
 
-            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
-              class="hero-shape shape-2">
+              <div class="hero-actions">
+                <a href="#booking" class="btn">Book Taxi</a>
+
+                <a href="tel:+46764575040" class="btn-outline">Call Dispatch</a>
+              </div>
+            </div>
+
+            <div class="booking-card" id="booking">
+              <div class="booking-card-head">
+                <div>
+                  <p class="booking-kicker">Taxi booking</p>
+                  <h3 class="booking-title">Request your ride</h3>
+                </div>
+
+                <a href="https://wa.me/46764575040" class="booking-whatsapp" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open WhatsApp chat">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </div>
+
+              <form class="booking-form" data-booking-form>
+                <div class="booking-grid">
+                  <input class="booking-field" type="text" name="name" placeholder="Full name" aria-label="Full name"
+                    required>
+
+                  <input class="booking-field" type="tel" name="phone" placeholder="Phone number"
+                    aria-label="Phone number" required>
+
+                  <input class="booking-field booking-wide" type="text" name="pickup" placeholder="Pickup location"
+                    aria-label="Pickup location" required>
+
+                  <input class="booking-field booking-wide" type="text" name="dropoff" placeholder="Drop-off location"
+                    aria-label="Drop-off location" required>
+
+                  <input class="booking-field" type="date" name="ride_date" aria-label="Ride date" required>
+
+                  <input class="booking-field" type="time" name="ride_time" aria-label="Ride time" required>
+
+                  <select class="booking-field" name="passengers" aria-label="Number of passengers" required>
+                    <option value="" selected disabled>Passengers</option>
+                    <option value="1">1 passenger</option>
+                    <option value="2">2 passengers</option>
+                    <option value="3">3 passengers</option>
+                    <option value="4">4 passengers</option>
+                    <option value="5+">5+ passengers</option>
+                  </select>
+
+                  <select class="booking-field" name="ride_type" aria-label="Ride type" required>
+                    <option value="" selected disabled>Ride type</option>
+                    <option value="city">City ride</option>
+                    <option value="airport">Airport transfer</option>
+                    <option value="long_distance">Long distance</option>
+                    <option value="hourly">Hourly hire</option>
+                  </select>
+                </div>
+
+                <textarea class="booking-field booking-textarea" name="notes" placeholder="Additional notes"
+                  aria-label="Additional notes"></textarea>
+
+                <button type="submit" class="btn booking-submit">Send booking request</button>
+
+                <p class="booking-note">
+                  WhatsApp opens with your trip details ready.
+                </p>
+              </form>
+            </div>
 
           </div>
 
@@ -187,10 +256,10 @@
 
             <p class="section-subtitle">Why Choose Us</p>
 
-            <h2 class="h2 section-title">We Are Your Trusted Multi-Service Partner in Sweden</h2>
+            <h2 class="h2 section-title">Fast Taxi Orders Across Stockholm</h2>
 
             <p class="section-text">
-              Skytrek AB combines diverse expertise to serve you better. From reliable taxi services and cutting-edge IT solutions to innovative exam preparation apps, we deliver quality across all sectors.
+              Skytrek AB makes booking a taxi simple. Send your pickup, destination, and time, then get a quick reply on WhatsApp.
             </p>
 
             <ul class="about-list">
@@ -201,7 +270,7 @@
                 </div>
 
                 <p class="about-text">
-                  Reliable taxi services operating throughout Sweden with professional drivers.
+                  Fast WhatsApp booking with clear trip details and quick confirmation.
                 </p>
               </li>
 
@@ -211,7 +280,7 @@
                 </div>
 
                 <p class="about-text">
-                  Comprehensive IT services delivering innovative technology solutions for businesses.
+                  Professional drivers and clean vehicles for everyday Stockholm travel.
                 </p>
               </li>
 
@@ -221,7 +290,7 @@
                 </div>
 
                 <p class="about-text">
-                  Mobile exam preparation app helping students succeed in their studies.
+                  Airport transfers, city rides, and longer trips handled in one place.
                 </p>
               </li>
 
@@ -231,7 +300,7 @@
                 </div>
 
                 <p class="about-text">
-                  Customer-focused approach ensuring satisfaction across all our service lines.
+                  Clear communication so your booking stays simple from start to finish.
                 </p>
               </li>
 
@@ -241,7 +310,7 @@
                 </div>
 
                 <p class="about-text">
-                  Quality and safety are our top priorities in everything we do.
+                  Safe, reliable rides with a polished and professional first impression.
                 </p>
               </li>
 
@@ -251,13 +320,13 @@
                 </div>
 
                 <p class="about-text">
-                  Innovation-driven services that adapt to modern Swedish market needs.
+                  Designed for mobile users who need a taxi quickly.
                 </p>
               </li>
 
             </ul>
 
-            <a href="#" class="btn">Learn More</a>
+            <a href="#booking" class="btn">Book Taxi</a>
 
           </div>
 
@@ -275,12 +344,12 @@
       <section class="section service" id="service" aria-label="service">
         <div class="container">
 
-          <p class="section-subtitle">All Services</p>
+          <p class="section-subtitle">Taxi Services</p>
 
-          <h2 class="h2 section-title">Trusted For Our Services</h2>
+          <h2 class="h2 section-title">Book a Ride in Stockholm</h2>
 
           <p class="section-text">
-            Skytrek AB provides three core services across Sweden: reliable taxi transportation, professional IT solutions, and innovative exam preparation mobile applications.
+            Skytrek AB focuses on quick taxi ordering, clear communication, and reliable rides for everyday travel.
           </p>
 
           <ul class="service-list grid-list">
@@ -289,21 +358,21 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/service-icon-1.png" width="80" height="60" loading="lazy" alt="Taxi Service">
+                  <img src="./assets/images/service-icon-1.png" width="80" height="60" loading="lazy" alt="City Taxi">
                 </div>
 
                 <h3 class="h3 card-title">
-                  <span class="span">01</span> Taxi Services
+                  <span class="span">01</span> City Taxi
                 </h3>
 
                 <p class="card-text">
-                  Professional taxi rides throughout Sweden with experienced drivers, comfortable vehicles, and reliable 24/7 service for all your transportation needs.
+                  Fast city trips around Stockholm with a simple order flow and quick WhatsApp confirmation.
                 </p>
 
-                <a href="#" class="btn-link">
+                <a href="#booking" class="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
-                  <span class="span">View Detail</span>
+                  <span class="span">Book Now</span>
                 </a>
 
               </div>
@@ -313,21 +382,21 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/service-icon-2.png" width="74" height="60" loading="lazy" alt="IT Services">
+                  <img src="./assets/images/service-icon-2.png" width="74" height="60" loading="lazy" alt="Airport Transfer">
                 </div>
 
                 <h3 class="h3 card-title">
-                  <span class="span">02</span> IT Services
+                  <span class="span">02</span> Airport Transfer
                 </h3>
 
                 <p class="card-text">
-                  Comprehensive IT solutions including software development, system integration, cloud services, and technical support tailored to your business requirements.
+                  Smooth airport pickups and drop-offs with a booking flow built for travelers on the move.
                 </p>
 
-                <a href="#" class="btn-link">
+                <a href="#booking" class="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
-                  <span class="span">View Detail</span>
+                  <span class="span">Book Now</span>
                 </a>
 
               </div>
@@ -337,21 +406,21 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/service-icon-3.png" width="60" height="60" loading="lazy" alt="Exam Prep App">
+                  <img src="./assets/images/service-icon-3.png" width="60" height="60" loading="lazy" alt="Hourly Hire">
                 </div>
 
                 <h3 class="h3 card-title">
-                  <span class="span">03</span> Exam Preparation App
+                  <span class="span">03</span> Hourly Hire
                 </h3>
 
                 <p class="card-text">
-                  Mobile application designed to help students prepare effectively for exams with practice tests, study materials, progress tracking, and personalized learning paths.
+                  Book a taxi by the hour for meetings, errands, and multiple stops in one trip.
                 </p>
 
-                <a href="#" class="btn-link">
+                <a href="#booking" class="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
-                  <span class="span">View Detail</span>
+                  <span class="span">Book Now</span>
                 </a>
 
               </div>
@@ -378,10 +447,10 @@
             <div>
               <p class="section-subtitle">Our Advantages</p>
 
-              <h2 class="h2 section-title">Why Skytrek AB Stands Out</h2>
+              <h2 class="h2 section-title">Why Stockholm Riders Choose Us</h2>
 
               <p class="section-text">
-                Skytrek AB combines expertise across multiple industries to deliver exceptional value. Our integrated approach ensures quality, reliability, and innovation in every service we provide.
+                Skytrek AB keeps taxi booking simple: clear communication, quick response, and a clean mobile-friendly flow that works when you need a ride now.
               </p>
             </div>
 
@@ -418,10 +487,10 @@
                   <img src="./assets/images/feature-icon-2.png" width="94" height="94" alt="">
                 </div>
 
-                <h3 class="h3 card-title">Advanced IT Solutions</h3>
+                <h3 class="h3 card-title">Fast Booking Flow</h3>
 
                 <p class="card-text">
-                  Cutting-edge technology services tailored to meet your business needs with modern development practices
+                  A simple order form that keeps taxi booking quick on both mobile and desktop.
                 </p>
 
                 <a href="#" class="card-btn" aria-label="Read more">
@@ -438,10 +507,10 @@
                   <img src="./assets/images/feature-icon-3.png" width="93" height="93" alt="">
                 </div>
 
-                <h3 class="h3 card-title">Smart Learning Platform</h3>
+                <h3 class="h3 card-title">Mobile First Design</h3>
 
                 <p class="card-text">
-                  Our mobile app provides comprehensive exam preparation tools with progress tracking and personalized study plans
+                  The layout stays readable and easy to use on smaller screens without extra clutter.
                 </p>
 
                 <a href="#" class="card-btn" aria-label="Read more">
@@ -469,10 +538,10 @@
 
           <p class="section-subtitle">Our Work</p>
 
-          <h2 class="h2 section-title">Recent Projects & Initiatives</h2>
+          <h2 class="h2 section-title">Recent Taxi Service Highlights</h2>
 
           <p class="section-text">
-            Explore our latest projects across taxi services, IT solutions, and educational technology. We're committed to delivering excellence in every sector we serve.
+            A clean booking flow, a clear contact path, and a professional first impression built for Stockholm taxi requests.
           </p>
 
           <ul class="project-list">
@@ -506,8 +575,8 @@
               <div class="project-card">
 
                 <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-2.jpg" width="397" height="352" loading="lazy"
-                    alt="IT Solutions" class="img-cover">
+                    <img src="./assets/images/project-2.jpg" width="397" height="352" loading="lazy"
+                    alt="Airport taxi" class="img-cover">
                 </figure>
 
                 <button class="action-btn" aria-label="View image">
@@ -515,10 +584,10 @@
                 </button>
 
                 <div class="card-content">
-                  <p class="card-tag">IT Services, Development</p>
+                  <p class="card-tag">Airport Transfers, Taxi</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Cloud Infrastructure Solutions</a>
+                    <a href="#" class="card-title">Airport Pickup Service</a>
                   </h3>
 
                   <a href="#" class="card-link">Read More</a>
@@ -531,8 +600,8 @@
               <div class="project-card">
 
                 <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-3.jpg" width="397" height="352" loading="lazy"
-                    alt="Exam Prep App" class="img-cover">
+                    <img src="./assets/images/project-3.jpg" width="397" height="352" loading="lazy"
+                    alt="Taxi booking on mobile" class="img-cover">
                 </figure>
 
                 <button class="action-btn" aria-label="View image">
@@ -540,10 +609,10 @@
                 </button>
 
                 <div class="card-content">
-                  <p class="card-tag">Education, Mobile App</p>
+                  <p class="card-tag">Mobile Booking, Taxi</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Exam Preparation Platform</a>
+                    <a href="#" class="card-title">Book Taxi From Phone</a>
                   </h3>
 
                   <a href="#" class="card-link">Read More</a>
@@ -556,8 +625,8 @@
               <div class="project-card">
 
                 <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-4.jpg" width="397" height="352" loading="lazy"
-                    alt="Mobile App Development" class="img-cover">
+                    <img src="./assets/images/project-4.jpg" width="397" height="352" loading="lazy"
+                    alt="Ride tracking" class="img-cover">
                 </figure>
 
                 <button class="action-btn" aria-label="View image">
@@ -565,10 +634,10 @@
                 </button>
 
                 <div class="card-content">
-                  <p class="card-tag">IT Services, Mobile</p>
+                  <p class="card-tag">Ride Tracking, Dispatch</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Custom Mobile Applications</a>
+                    <a href="#" class="card-title">Live Ride Updates</a>
                   </h3>
 
                   <a href="#" class="card-link">Read More</a>
@@ -606,8 +675,8 @@
               <div class="project-card">
 
                 <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-6.jpg" width="397" height="352" loading="lazy"
-                    alt="Student Learning Analytics" class="img-cover">
+                    <img src="./assets/images/project-6.jpg" width="397" height="352" loading="lazy"
+                    alt="Taxi service analytics" class="img-cover">
                 </figure>
 
                 <button class="action-btn" aria-label="View image">
@@ -615,10 +684,10 @@
                 </button>
 
                 <div class="card-content">
-                  <p class="card-tag">Education, Analytics</p>
+                  <p class="card-tag">Taxi Service, Analytics</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Learning Progress Analytics</a>
+                    <a href="#" class="card-title">Service Demand Overview</a>
                   </h3>
 
                   <a href="#" class="card-link">Read More</a>
@@ -643,12 +712,12 @@
       <section class="section blog" aria-label="blog" id="blog">
         <div class="container">
 
-          <p class="section-subtitle">Our Blogs</p>
+          <p class="section-subtitle">Updates</p>
 
-          <h2 class="h2 section-title">Recent News & Updates</h2>
+          <h2 class="h2 section-title">Taxi Booking Notes</h2>
 
           <p class="section-text">
-            Stay updated with the latest news from Skytrek AB. Read about our service expansions, technology innovations, and industry insights across our taxi, IT, and education sectors.
+            Short updates about booking flow, service coverage, and how riders can order a taxi faster from mobile.
           </p>
 
           <ul class="blog-list grid-list">
@@ -670,12 +739,12 @@
 
                   <h3 class="h3 card-title">
                     <a href="#">
-                      Expanding Our Taxi Services Across Major Swedish Cities
+                      Stockholm Taxi Booking Now Works Faster on Mobile
                     </a>
                   </h3>
 
                   <p class="card-text">
-                    Skytrek AB is proud to announce the expansion of our taxi services to additional cities across Sweden. With new fleet additions and experienced drivers, we're committed to providing reliable transportation to more communities.
+                    We refined the booking flow so riders can request a taxi quickly, read the details clearly, and open WhatsApp without extra steps.
                   </p>
 
                   <a href="#" class="btn-link">
@@ -694,7 +763,7 @@
 
                 <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
                   <img src="./assets/images/blog-2.jpg" width="770" height="500" loading="lazy"
-                    alt="New Exam Preparation App Features"
+                    alt="Taxi booking on mobile"
                     class="img-cover">
                 </figure>
 
@@ -706,12 +775,12 @@
 
                   <h3 class="h3 card-title">
                     <a href="#">
-                      New Features in Our Exam Preparation App: AI-Powered Study Recommendations
+                      Simple Booking Details for Quick WhatsApp Orders
                     </a>
                   </h3>
 
                   <p class="card-text">
-                    We've launched exciting new features in our exam preparation mobile app, including AI-powered study recommendations, enhanced progress tracking, and interactive practice tests to help students excel.
+                    The booking form keeps the important trip details in one place, so dispatch can confirm your ride faster.
                   </p>
 
                   <a href="#" class="btn-link">
@@ -748,7 +817,7 @@
 
           <div class="newsletter-content">
 
-            <h2 class="h2 section-title">Subscribe for offers and news</h2>
+            <h2 class="h2 section-title">Get taxi offers and updates</h2>
 
             <form action="" class="newsletter-form">
               <input type="email" name="email_address" placeholder="Enter Your Email" aria-label="email"
@@ -783,7 +852,7 @@
           <a href="#" class="logo">Skytrek AB</a>
 
           <p class="footer-text">
-            Skytrek AB is your trusted partner in Sweden for taxi services, IT solutions, and educational technology. We deliver quality and innovation across all our services.
+            Skytrek AB is your Stockholm taxi partner for clean cars, quick booking, and dependable rides.
           </p>
 
           <ul class="social-list">
@@ -904,7 +973,7 @@
 
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; 2025 Skytrek AB. All Rights Reserved | Sweden's Trusted Service Partner
+          &copy; 2025 Skytrek AB. All Rights Reserved | Stockholm Taxi Booking
         </p>
       </div>
 
@@ -922,6 +991,36 @@
   <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
     <ion-icon name="chevron-up"></ion-icon>
   </a>
+
+  <div class="whatsapp-widget" data-whatsapp-widget>
+    <div class="whatsapp-panel">
+      <button class="whatsapp-close-btn" type="button" aria-label="Close WhatsApp chat" data-whatsapp-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="whatsapp-panel-head">
+        <span class="whatsapp-status-dot"></span>
+        <div>
+          <p class="whatsapp-title">Skytrek AB</p>
+          <p class="whatsapp-subtitle">Usually replies within minutes</p>
+        </div>
+      </div>
+
+      <p class="whatsapp-message">
+        Chat with us on WhatsApp for bookings, service questions, or quick support.
+      </p>
+
+      <a class="whatsapp-panel-btn" href="https://wa.me/46764575040" target="_blank" rel="noopener noreferrer">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <span>Start chat</span>
+      </a>
+    </div>
+
+    <button class="whatsapp-launcher" type="button"
+      aria-label="Chat with Skytrek AB on WhatsApp" data-whatsapp-open>
+      <ion-icon name="logo-whatsapp"></ion-icon>
+    </button>
+  </div>
 
 
 
